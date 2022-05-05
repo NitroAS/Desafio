@@ -1,0 +1,188 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto&display=swap');   
+ *{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: Roboto;
+}/* ALINHAMENTO LOGO E TEXTO 'FILMES'*/
+
+
+.filmesFilmes{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.CinemaFilmes{
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+.filmesTexto{
+    font-size: 32px;
+    line-height: 28px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+/*  */
+
+.cadastrarFilmes{
+    font-size: 20px;
+    line-height: 23px;  
+    color: #000000;
+}
+
+.inputsFilmesTexto , .selectFilmes {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    width: 400px;
+    height: 58px;
+    color: #4B2142;
+    font-size: 20px;
+    line-height: 23px;
+    padding: 10px 1px 8px 15px;
+
+
+
+}
+.inputsFilmesTexto , .option{
+    color: #4B2142;
+}
+.inputsFilmesTexto:placeholder{
+    color: #4B2142;
+}
+.btnSalvarFilmes{
+    width: 180px;
+    height: 58px;
+    background-color: #F6511D;
+    font-size: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btnExcluirFilmes {
+    background: #41B8D2;
+    color: #000000;
+    border: 2px solid #41B8D2;
+}
+.btnSalvarFilmes:hover , .btnExcluirFilmes:hover , .btnEditarFilmes:hover{
+    color: #9BD2DE;
+}
+
+    .inputsF{
+        display: flex;
+        justify-content: space-between;
+        width: 1030px;
+    }
+
+    .AlinhamentoInputsFilmes{
+        
+        margin-top: 20px;
+        padding: 0px 10px 0px 0px;
+        }
+
+.alinhamentoTextoFilmes1{
+    display: flex;
+   justify-content: space-between;
+   margin-top: 50px;
+  
+
+}
+
+.btnExcluirFilmes , .btnEditarFilmes {
+    background: #F6511D;
+    border: 2px solid #F6511D;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    width: 125px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.selectFilmes{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../../Assets/img/select.png);
+    background-repeat: no-repeat, repeat;
+    background-position: right 1.2em top 60%, 0 0;
+    background-size: 0.8em auto, 100%;
+}
+
+
+/* Map */
+.mapAlinhamentoFilmes{
+    display: flex;
+    justify-content: space-between;
+    width: 79vw;    
+}
+.mapAlinhamentoFilmes p {
+    font-size: 20px;
+    line-height: 23px;
+    color: #4B2142;
+    margin-top:29px;
+    display: flex;
+   justify-content: space-between;
+   
+}
+
+.pMap{
+    display: flex;
+    justify-content: space-between;
+}
+.mapPFilmes{
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+}
+
+.btnExcluirFilmes , .btnEditar {
+    background: #F6511D;
+    border: 2px solid #F6511D;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    width: 125px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.btnExcluirFilmes:hover , .btnEditarFilmes:hover {
+    color: #F6511D;
+    border: 2px solid #F6511D;
+    background-color: #fff;
+}
+
+.btnExcluirFilmes:hover{
+    color: #41B8D2;
+    border: 2px solid #41B8D2;
+}
+.btnSalvarFilmes:hover{
+    color: #000000;
+    background-color: #9BD2DE;
+    border: 2px solid #9BD2DE;
+
+}
+.btnExcluirFilmes {
+    background: #41B8D2;
+    color: #000000;
+    border: 2px solid #41B8D2;
+}
+.btnEditarFilmes{
+    margin-right: 12px;
+}
+
+
+.espacamentoBtnSalvarFilmes{
+    display: flex;
+}

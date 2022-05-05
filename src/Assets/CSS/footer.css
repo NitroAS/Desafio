@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: Roboto;
+}
+.footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  var(--cor1);
+    margin-top: 50px;
+   
+}
+
+.logoTwo
+{
+    margin-bottom: 90px;
+}
+
+
+.borda
+{
+    margin-left: 50px;
+    height: 250px;
+    border-right: 1px solid white;
+}
+
+.rodape
+{
+    margin-left: 45px;
+    font-family: "Roboto";
+    color: white;
+    font-size: 18px;
+}
+

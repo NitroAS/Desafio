@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-size: 15px;
+    font-family: Roboto;
+}
+/* proporsões do main */
+.mainHome{
+ height: 620px;
+ width: 75%;
+ margin: auto;
+}
+/*  alinhamento do main */
+.meio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/* alinhamento do H1 */
+h1{
+    font-size: 36px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+   
+}
+
+/* tamnanho do texto do meio */
+.texto1Meio{
+    font-size: 14px;
+    text-align: left;
+ 
+}
+.textoMeio{
+    font-size: 14px;
+    margin-top: 10px;
+}
+/* tamanho do titulo do meio */
+.tituloHome{
+    font-size: 24px;
+    margin-top: 65px;
+}
+/*  */
+.movimentoFilmeECategoria{
+    display:flex;
+    margin-top: 70px;
+    justify-content: space-between;
+}
+.homeTexto{
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.texto2Meio , .texto3Meio{
+    margin-top: 15px;
+    text-align: left;
+    width: 350px;
+}
+

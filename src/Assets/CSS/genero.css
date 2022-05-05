@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-size: 15px;
+    font-family: Roboto;
+}
+generoGenero
+{
+    margin-top: 32px;
+    margin-bottom: 13px;
+    font-size: 24px;
+}
+h1{
+    font-size: 36px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.logoGenero
+{
+    display: flex;
+    margin: auto;
+    margin-bottom: 31.5px;
+}
+main{
+  
+   
+    width: 75%;
+    margin: auto;
+
+}
+.labelGenero
+{
+    margin-top: 31.5px;
+}
+
+.cadastroGenero
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.inputGenero
+{
+    display: block;
+    width: 400px;
+    height: 58px;
+    margin-top: 21px;
+    font-size: 20px;
+    padding: 5px 0px 0px 24px;
+    color: #4B2142;
+}
+
+.btnGeneroSalvar
+{
+    width: 180px;
+    height: 58px;
+    background-color: #F6511D;
+    font-size: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+.btnExcluirGenero , .btnEditarGenero {
+    background: #F6511D;
+    border: 2px solid #F6511D;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    width: 125px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.btnExcluirGenero:hover , .btnEditarGenero:hover {
+    color: #F6511D;
+    border: 2px solid #F6511D;
+    background-color: #fff;
+
+}
+.btnExcluirGenero:hover {
+    color: #41B8D2;
+    border: 2px solid #41B8D2;
+}
+.btnGeneroSalvar:hover{
+    color: #000000;
+    background-color: #9BD2DE;
+    border: 2px solid #9BD2DE;
+
+}
+.btnExcluirGenero {
+    background: #41B8D2;
+    color: #000000;
+    border: 2px solid #41B8D2;
+}
+.btnEditarGenero{
+    margin-right: 12px;
+}
+
+.txtGenero{
+    font-size: 20px;
+    line-height: 23px;
+    color: #4B2142;
+    margin-top: 40px;
+}
+
+.labelGenero{
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    
+}
+
+/* Parte do Map */
+
+.mapAlinhamento{
+    display: flex;
+    justify-content: space-between;
+    width: 74vw; 
+     
+}
+.mapAlinhamento p {
+    font-size: 20px;
+    line-height: 23px;
+    color: #4B2142;
+    margin-top:29px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pMap{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+
+

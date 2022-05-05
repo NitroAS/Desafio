@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-size: 15px;
+    font-family: Roboto;
+}
+
+.usuarios{
+    font-size: 32px;
+    color:  #000000;
+    margin-top: 10px;
+
+}
+
+.alinhamentoCadastrar{
+    display: flex;
+    justify-content: center;
+}
+.inputs{
+    width: 300px;
+    height: 58px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 20px;
+}    
+   
+.inputsAlinhamento{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.padding{
+    padding: 20px;
+}
+.nome , .email , .telefone{
+    font-size: 20px;
+    line-height: 23px;
+    color: #4B2142;
+  
+}
+.btnCadastrarAlinhamento{
+    margin-top: 15px;
+}
+.btnCadastrar{
+    width: 180px;
+    height: 58px;
+    background: #F6511D;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 2px solid #F6511D;
+}
+
+.alinhamentoBtn{
+    display: flex;
+   
+   
+}
+
+.btnCadastrar:hover{
+    color: #000000;
+    background-color: #9BD2DE;
+    border: 2px solid #9BD2DE;
+}
+
+.alinhamentoDaMainUsuario{
+    height: 620px;
+    
+    margin: auto;
+}
+
+.divPai{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+.divFilho{
+    padding-left: 28px;
+}
+.pUsuario1 , .pUsuario2 , .pUsuario3 , .pUsuario1nome , .pUsuario2nome , .pUsuario3nome{ 
+    font-size: 20px;
+    line-height: 23px;
+    color: #4B2142;
+    padding: 10px;
+    margin-top: 20px;
+   
+}
+
+.pUsuario3{
+    width: 95px;
+}
+
+.pUsuario1nome , .pUsuario2nome , .pUsuario3nome{
+    padding-right: 200px;
+}
+
+.btnEditarUsuario , .btnExcluirUsuario  {
+    background: #F6511D;
+    color: #FFFFFF;
+    border: 2px solid #F6511D;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 125px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 23px;
+
+}
+.btnEditarUsuario:hover , .btnExcluirUsuario:hover{
+    color: #F6511D;
+    border: 2px solid #F6511D;
+    background-color: #fff;
+} 
+
+.btnExcluirUsuario:hover{
+    color: #41B8D2;
+    border: 2px solid #41B8D2;
+}
+.espacamentoBotao{
+    padding: 20px 0px 10px 0px;
+}
+.btnExcluirUsuario {
+    background: #41B8D2;
+    color: #000000;
+    border: 2px solid #41B8D2;
+}
+
+.espacamentoBotao{
+    display: flex;
+}
+
+.alinhamentoTotal{
+    display: flex;
+    justify-content: center;
+}
+
+.espacamentoBtnEditar , .espacamentoBtnExcluir {
+    margin-bottom: 1px;
+    padding-left: 20px;
+ }
+
+
+ .espacamentoBotao{
+     padding-left: 20px;
+ }
+
+ .texto1{
+    font-size: 22px;
+    line-height: 29px;
+    margin-bottom: 0px;
+    
+ }
+
+
+ .texto3{
+    font-size: 22px;
+    line-height: 26px;
+ }
