@@ -53,4 +53,4 @@ jobs:
           app-name: 'DesafioEdusynx'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A4F3026A9C224183952AC7231F25F6CF }}
-          package: .
+          package: 'build'
