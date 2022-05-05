@@ -30,7 +30,13 @@ export const Filmes = (): JSX.Element => {
     }
 
 
-    const listarFilmes = () => {
+
+
+    useEffect(() => {
+        listarGeneros()
+    }, [])
+
+    useEffect(() => {
         let quantidadeElementos: number = generos.length
 
         for (let index = 0; index < quantidadeElementos; index++) {
@@ -39,14 +45,6 @@ export const Filmes = (): JSX.Element => {
                     setFilmes(filmes => filmes.concat(resultadoFilmes.data))
                 })
         }
-    }
-
-    useEffect(() => {
-        listarGeneros()
-    }, [])
-
-    useEffect(() => {
-        listarFilmes()
     }, [generos.length])
 
     useEffect(() => {
