@@ -88,7 +88,7 @@ export const Genero = (): JSX.Element => {
 
            else{
             Swal.fire({
-                title: 'Preencha o campo vazio primeiro',
+                title: 'Preencha o campo vazio',
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#F6511D',

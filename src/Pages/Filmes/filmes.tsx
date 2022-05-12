@@ -67,7 +67,7 @@ export const Filmes = (): JSX.Element => {
         else 
         {
             Swal.fire({
-                title: 'Preencha os campos vazio primeiro',
+                title: 'Preencha os campos vazios',
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#F6511D',

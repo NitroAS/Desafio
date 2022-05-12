@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import stonksWhite from '../../Assets/img/stonksWhite.png'
+import stonksWhite from '../../Assets/img/stonksWhite.jpg'
 import '../../Assets/CSS/erro.css'
 
 export const Stonks = (props:any):JSX.Element =>{

@@ -108,7 +108,7 @@ export const ModalFilmes = (props: any) => {
                             {
                                 showInput &&
                                 <div className="msgDeErroFilmes">
-                                    <p className="vermelhoFilmesModal">Preencha o campo Vazio!</p>
+                                    <p className="vermelhoFilmesModal">Campo de preenchimento obrigatório!</p>
                                 </div>
                             }
                     <div className="AlinhamentoSalvarModalFilme">

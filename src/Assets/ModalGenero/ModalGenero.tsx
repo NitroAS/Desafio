@@ -57,7 +57,7 @@ export const ModalGenero = (props: any) => {
                             {
                                 showInput &&
                                 <div className="msgDeErro">
-                                    <p className="vermelho">Escreva o nome de um novo Gênero! </p>
+                                    <p className="vermelho">Campo de preenchimento obrigatório!</p>
                                 </div>
                             }
                 </div>
