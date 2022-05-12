@@ -24,23 +24,24 @@ export const ModalFilmes = (props: any) => {
 
 
     const [nomeTittle, setNomeTittle] = useState<string>('');
-
-
+    const [showInput, setshowInput] =  useState(false);
     const [valorSelect, setValorSelect] = useState<string>('');
 
 
     const EditarFilmes = (idGeneros: any, idFilme: any) => {
 
+        
+        if ( valorSelect === '' || nomeTittle === '' ){
+            
+            setshowInput(true)
+            return
+        }
+        
         if ( idGeneros === ''  ){
-
+            
             idGeneros  = props.idGenero
         }
         
-        if ( valorSelect === ''){
-            
-            window.alert('o Gênero deve ser preenchido!!!!!!!')
-
-        }
 
         else {
             
@@ -79,7 +80,7 @@ export const ModalFilmes = (props: any) => {
                                 className="inputFilmeModal"
                                 defaultValue={nomeTittle}
                                 onChange={(e) => setNomeTittle(e.target.value)}
-
+                                maxLength={40}
                             />
                         </div>
                         <select
@@ -91,8 +92,6 @@ export const ModalFilmes = (props: any) => {
 
                             <option className="option" hidden selected >Gênero</option>
                             {generos.map((item): any => {
-                                
-                                
                                 return (
 
                                     <option
@@ -106,6 +105,12 @@ export const ModalFilmes = (props: any) => {
 
                         </select>
                     </div>
+                            {
+                                showInput &&
+                                <div className="msgDeErroFilmes">
+                                    <p className="vermelhoFilmesModal">Preencha o campo Vazio!</p>
+                                </div>
+                            }
                     <div className="AlinhamentoSalvarModalFilme">
                         <button className="btnFilmeModalSalvar" onClick={() => EditarFilmes( valorSelect , props.idFilmes)} >Salvar</button>
                     </div>

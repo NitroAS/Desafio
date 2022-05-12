@@ -6,13 +6,19 @@ export const ModalGenero = (props: any) => {
 
 
     const [nomeGenero, setNomeGenero] = useState('');
+    const [showInput, setshowInput] =  useState(false);
+        const EditarGenero = (idGeneros: number) => {
 
-    const EditarGenero = (idGeneros: number) => {
-        apiDesafio.put(`Genre/${idGeneros}`, { NomeGenre: nomeGenero })
+            if(nomeGenero !== ''){
 
-        .then(() => {
-            window.location.reload()
-        })
+                apiDesafio.put(`Genre/${idGeneros}`, { NomeGenre: nomeGenero })
+                .then(() => {
+                    window.location.reload()
+                })
+            }
+            else{
+                setshowInput(true)    
+            }
 
     }
 
@@ -42,12 +48,18 @@ export const ModalGenero = (props: any) => {
                             className="inputGeneroModal"
                             defaultValue={nomeGenero}
                             onChange={(e) => setNomeGenero(e.target.value)}
-                            
-                        />
+                            maxLength={15}
+                            />
                         <div className="AlinhamentoSalvarModal">
                             <button className="btnGeneroModalSalvar" onClick={() => EditarGenero(props.idGenero)} >Salvar</button>
                         </div>
                     </div>
+                            {
+                                showInput &&
+                                <div className="msgDeErro">
+                                    <p className="vermelho">Escreva o nome de um novo Gênero! </p>
+                                </div>
+                            }
                 </div>
 
 

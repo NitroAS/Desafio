@@ -5,6 +5,8 @@ import { Header } from "../../Components/header/header";
 import { Footer } from "../../Components/footer/footer";
 import { apiDesafio } from "../../Services/api";
 import { ModalGenero } from "../../Assets/ModalGenero/ModalGenero"
+import Swal from 'sweetalert2'
+
 
 let propsGenero: any = {
     description: 'Cadastre os gêneros dos filmes',
@@ -42,9 +44,6 @@ export const Genero = (): JSX.Element => {
         apiDesafio.get('Genre')
             .then(resultado => {
                 setGeneros(resultado.data)
-                
-
-
 
             })
 
@@ -72,18 +71,31 @@ export const Genero = (): JSX.Element => {
     const [nomeGenre, setNomeGeneros] = useState<any>('');
     const Cadastrar = () => {
         
-           
-            apiDesafio.post(`Genre`, { NomeGenre : nomeGenre })
-            
-            .then(() => {
-                
-                setNomeGeneros('')
-                
+           if (nomeGenre !== '')
+           {
+               apiDesafio.post(`Genre`, { NomeGenre : nomeGenre })
+               
+               .then(() => {
+                   
+                   setNomeGeneros('')
+                   
+               })
+       
+               .then(() => {
+                   window.location.reload()
+               })
+           }
+
+           else{
+            Swal.fire({
+                title: 'Preencha o campo vazio primeiro',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#F6511D',
+                cancelButtonColor: '#41B8D2',
+                confirmButtonText: 'OK'
             })
-    
-            .then(() => {
-                window.location.reload()
-            })
+           }
         
     }
 
@@ -104,7 +116,8 @@ export const Genero = (): JSX.Element => {
                             placeholder="Gênero"
                             className="inputGenero"
                             value={nomeGenre}
-                            onChange={(estadoDoInput) => setNomeGeneros(estadoDoInput.target.value)} />
+                            onChange={(estadoDoInput) => setNomeGeneros(estadoDoInput.target.value)}
+                            maxLength={15} />
                     </div>
 
                     <div>

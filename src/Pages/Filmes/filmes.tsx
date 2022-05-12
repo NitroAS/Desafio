@@ -5,6 +5,7 @@ import { Header } from "../../Components/header/header";
 import { apiDesafio } from "../../Services/api";
 import { Footer } from "../../Components/footer/footer";
 import { ModalFilmes } from "../../Assets/ModalFilmes/ModalFilmes"
+import Swal from 'sweetalert2'
 let propsFilmes: any = {
     description: 'Cadastre os filmes de sua preferência ',
 }
@@ -43,7 +44,7 @@ export const Filmes = (): JSX.Element => {
     }, [filmes.length])
 
     const ExcluirFilmes = (idGenero: number, idFilme: number) => {
-
+        
         if (window.confirm('Deseja realmente excluir o genero?')) {
             apiDesafio.delete(`Genre/${idGenero}/TittleMove/${idFilme}`)
                 .then(() => {
@@ -58,10 +59,22 @@ export const Filmes = (): JSX.Element => {
     const [nomeFilme, setNomeFilme] = useState('')
     const [nomeidGenero, setIdGenero] = useState(0)
     const Salvar = (idGeneros: any) => {
-        
-        apiDesafio.post(`Genre/${idGeneros}/TittleMove/`, { Tittle: nomeFilme })
-            .then(() => setNomeFilme(''))
-            .then(() => { window.location.reload() })
+        if (nomeFilme !== ''){
+            apiDesafio.post(`Genre/${idGeneros}/TittleMove/`, { Tittle: nomeFilme })
+                .then(() => setNomeFilme(''))
+                .then(() => { window.location.reload() })
+        }
+        else 
+        {
+            Swal.fire({
+                title: 'Preencha os campos vazio primeiro',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#F6511D',
+                cancelButtonColor: '#41B8D2',
+                confirmButtonText: 'OK'
+            })
+        }
 
     }
 
@@ -109,6 +122,7 @@ export const Filmes = (): JSX.Element => {
                         <input className="inputsFilmesTexto" 
                         type="text" name="TFilmes" 
                         placeholder="Título do Filme"
+                        maxLength={40}
                         value={nomeFilme}
                         onChange={(estadoDoInput) => setNomeFilme(estadoDoInput.target.value)} />
                         <div className="Alinhamentoselect">

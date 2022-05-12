@@ -126,3 +126,15 @@
     display: none;
 }
 
+
+.vermelho{
+    color: red;
+    
+}
+
+
+.msgDeErro{
+    display: flex;
+    flex-direction: column;
+   
+}
