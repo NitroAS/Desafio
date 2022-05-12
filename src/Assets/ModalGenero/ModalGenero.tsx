@@ -2,7 +2,6 @@ import React, {  useState } from "react";
 import '../../Assets/CSS/modalGenero.css';
 import { apiDesafio } from "../../Services/api";
 
-
 export const ModalGenero = (props: any) => {
 
 

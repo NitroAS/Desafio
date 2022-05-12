@@ -1,6 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../../Assets/CSS/modalUsuario.css';
-
 
 export const ModalUsuario = (props: any) => {
 
@@ -52,13 +52,13 @@ export const ModalUsuario = (props: any) => {
 
                         </div>
                         
-                    
                         <div className="AlinhamentoSalvarModal">
-                            <button className="btnUsuarioModalSalvar" >Salvar</button>
+                            <button className="btnUsuarioModalSalvar"><Link to={'/Stonks'}>Salvar</Link></button>
                         </div>
                     </div>
                 </div>
 
+      
 
                 <footer className="ModalUsuarioFooter">
 

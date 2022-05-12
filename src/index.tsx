@@ -6,8 +6,7 @@ import { Home } from './Pages/Home/home'
 import { Usuarios } from './Pages/Usuarios/usuario'
 import { Filmes }  from './Pages/Filmes/filmes';
 import  { Genero } from './Pages/Genero/genero';
-
-
+import Stonks from './Pages/Usuarios/Stonks';
 
 const Rota = () =>{
 
@@ -18,6 +17,8 @@ const Rota = () =>{
                 <Route element={<Usuarios  />} path="/Usuarios" />
                 <Route element={<Filmes  />} path="/Filmes" />
                 <Route element={<Genero  />} path="/Genero" />
+                <Route element={<Stonks  />} path="/Stonks" />
+               
             </Routes>
         </BrowserRouter>
     );

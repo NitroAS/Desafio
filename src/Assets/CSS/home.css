@@ -25,14 +25,12 @@ h1{
     display: flex;
     align-items: center;
     margin-top: 40px;
-   
 }
 
 /* tamnanho do texto do meio */
 .texto1Meio{
     font-size: 14px;
     text-align: left;
- 
 }
 .textoMeio{
     font-size: 14px;

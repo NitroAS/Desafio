@@ -27,8 +27,6 @@ h1{
     margin-bottom: 31.5px;
 }
 main{
-  
-   
     width: 75%;
     margin: auto;
 
@@ -88,7 +86,6 @@ main{
     color: #F6511D;
     border: 2px solid #F6511D;
     background-color: #fff;
-
 }
 .btnExcluirGenero:hover {
     color: #41B8D2;
@@ -98,7 +95,6 @@ main{
     color: #000000;
     background-color: #9BD2DE;
     border: 2px solid #9BD2DE;
-
 }
 .btnExcluirGenero {
     background: #41B8D2;
@@ -120,7 +116,6 @@ main{
     font-size: 20px;
     line-height: 23px;
     color: #000000;
-    
 }
 
 /* Parte do Map */
@@ -128,8 +123,7 @@ main{
 .mapAlinhamento{
     display: flex;
     justify-content: space-between;
-    width: 74vw; 
-     
+    width: 74vw;  
 }
 .mapAlinhamento p {
     font-size: 20px;
@@ -143,7 +137,6 @@ main{
 .pMap{
     display: flex;
     flex-direction: column;
-  
 }
 
 

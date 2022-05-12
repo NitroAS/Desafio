@@ -8,7 +8,6 @@ export const ModalFilmes = (props: any) => {
 
     const [generos, setGeneros] = useState<any[]>([]);
 
-
     const listarGeneros = () => {
 
         apiDesafio.get('Genre')
@@ -51,12 +50,7 @@ export const ModalFilmes = (props: any) => {
                 
             })
         }
-
-
-
     }
-
-
 
     return (
 
@@ -116,7 +110,6 @@ export const ModalFilmes = (props: any) => {
                         <button className="btnFilmeModalSalvar" onClick={() => EditarFilmes( valorSelect , props.idFilmes)} >Salvar</button>
                     </div>
                 </div>
-
 
                 <footer className="ModalFilmeFooter">
 

@@ -7,9 +7,7 @@ import { Footer } from "../../Components/footer/footer";
 import { ModalFilmes } from "../../Assets/ModalFilmes/ModalFilmes"
 let propsFilmes: any = {
     description: 'Cadastre os filmes de sua preferência ',
-
 }
-
 
 export const Filmes = (): JSX.Element => {
 
@@ -21,16 +19,10 @@ export const Filmes = (): JSX.Element => {
         apiDesafio.get('Genre')
             .then(resultado => {
                 setGeneros(resultado.data)
-                
-
-
 
             })
 
     }
-
-
-
 
     useEffect(() => {
         listarGeneros()
@@ -49,8 +41,6 @@ export const Filmes = (): JSX.Element => {
 
     useEffect(() => {
     }, [filmes.length])
-
-
 
     const ExcluirFilmes = (idGenero: number, idFilme: number) => {
 
@@ -75,7 +65,6 @@ export const Filmes = (): JSX.Element => {
 
     }
 
-    
     const [modalFilmes, SetModal] = useState('hide')
     
     const [pegarIdFilmes , setPegarIdFilmes] = useState(0)
@@ -102,7 +91,6 @@ export const Filmes = (): JSX.Element => {
         window.scroll({top: 
             150,left: 0,behavior: 'smooth'});
     }
-
 
     return (
         <>
@@ -161,7 +149,7 @@ export const Filmes = (): JSX.Element => {
                             <ModalFilmes  mostrar={modalFilmes} funcao={AbrirFecharModal} idGenero={pegarIdGenero} idFilmes={pegarIdFilmes}/>
                             <div className="divDosBtnCima">
                                 <button className="btnEditarFilmes"onClick={() => AbrirFecharModal(modalFilmes, item.idFilme , item.GenreId )}>Editar</button>
-                                <button className="btnExcluirFilmes" onClick={() => ExcluirFilmes(item.GenreId, item.idFilme,)}>Excluir</button>
+                                <button className="btnExcluirFilmes" onClick={() => ExcluirFilmes(item.GenreId, item.idFilme)}>Excluir</button>
                             </div>
 
                         </div>
@@ -170,7 +158,6 @@ export const Filmes = (): JSX.Element => {
                     )
 
                 })}
-
 
             </main>
             <Footer />

@@ -6,16 +6,14 @@ import { Footer } from "../../Components/footer/footer";
 import { apiDesafio } from "../../Services/api";
 import { ModalGenero } from "../../Assets/ModalGenero/ModalGenero"
 
-
-
 let propsGenero: any = {
     description: 'Cadastre os gêneros dos filmes',
     
 }
 export const Genero = (): JSX.Element => {
     
-    const [modalGenero, SetModal] = useState('hide')
     const [pegarId , setPegarId] = useState(0)
+    const [modalGenero, SetModal] = useState('hide')
 
     const AbrirFecharModal = (estadoAtual:any , idGeneros:number ) =>
     {
@@ -89,15 +87,6 @@ export const Genero = (): JSX.Element => {
         
     }
 
-
-
-    // const [nomeGenero, setNomeGenero] = useState('');
-    // const EditarGenero = (id:number) => {
-    //     apiDesafio.put(`Genre/${id}`, { NomeGenre : nomeGenero})
-    //     .then(PegandoGeneros)
-    //     .then(() => setNomeGenero(''))
-    // }
-
     return (
         <>
             <Header objeto={propsGenero} />
@@ -122,7 +111,6 @@ export const Genero = (): JSX.Element => {
                         <button className="btnGeneroSalvar" onClick={() => Cadastrar()} >Salvar</button>
                     </div>
                 </div>
-
 
                 {/* CHAMANDO A API DE GENEROS */}
              

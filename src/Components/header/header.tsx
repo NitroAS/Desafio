@@ -1,8 +1,6 @@
-
 import '../../Assets/CSS/header.css';
 import logoOne from "../../Assets/img/Group 2.png"
 import { Link } from "react-router-dom";
-
 
 export  const Header = (props:any): JSX.Element => {
 
@@ -23,8 +21,6 @@ export  const Header = (props:any): JSX.Element => {
                 </div>
 
                 <div className="buttonsAlinhamento">
-
-
 
                     <Link className="button1" to='/'>Home</Link>
                     <Link className="button2" to='/Usuarios'>Usuários</Link>

@@ -121,15 +121,19 @@
     width: 120px;
     height: 58px;
     background-color: #F6511D;
-    font-size: 20px;
-    color: white;
     border: none;
     cursor: pointer;
     margin-top: 40px;
 }
 
+.btnUsuarioModalSalvar a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
 .btnUsuarioModalSalvar:hover{
-    color: #000000;
+    color: #000;
     background-color: #9BD2DE;
 }
 

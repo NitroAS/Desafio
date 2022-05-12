@@ -2,8 +2,6 @@ import React from "react";
 import '../../Assets/CSS/footer.css';
 import logoTwo from "../../Assets/img/Group 1.png"
 
-
-
 export  const Footer = ():JSX.Element =>{
 
 
@@ -14,10 +12,8 @@ export  const Footer = ():JSX.Element =>{
                 <img src={logoTwo} alt="Logo do header" />
             </div>
 
-          
             <div className='borda'></div>
-           
-
+        
             <p className='rodape'>Company Inc, 8901 Marmora Road, Glasgow, D04 89GR
             <br></br>
             <br></br>

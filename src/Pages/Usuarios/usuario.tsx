@@ -1,17 +1,13 @@
 import React, { useState } from "react";
 import '../../Assets/CSS/usuario.css';
 import { ModalUsuario } from "../../Assets/ModalUsuario/ModalUsuario"
-
 import { Header } from "../../Components/header/header";
-
 import { Footer } from "../../Components/footer/footer";
-
 let propsUsuario: any = {
     description: 'Faça o Cadastro de usuários e  edite, caso necessário',
     supdescription: 'Pronto para cadastrar?'
 }
 export const Usuarios = (): JSX.Element => {
-
 
     const [modalUsuario, SetModal] = useState('hide')
 
@@ -25,10 +21,9 @@ export const Usuarios = (): JSX.Element => {
 
         window.scroll({
             top:
-            190, left: 0, behavior: 'smooth'
+                190, left: 0, behavior: 'smooth'
         });
     }
-
 
     return (
         <>
@@ -95,7 +90,7 @@ export const Usuarios = (): JSX.Element => {
 
                                         <div className="espacamentoBtnEditar">
                                             <ModalUsuario info="X" mostrar={modalUsuario} funcao={AbrirFecharModal} />
-                                            <button className="btnEditarUsuario" onClick={() => AbrirFecharModal(modalUsuario) } >Editar</button>
+                                            <button className="btnEditarUsuario" onClick={() => AbrirFecharModal(modalUsuario)} >Editar</button>
                                         </div>
                                         <div className="espacamentoBtnExcluir">
                                             <button className="btnExcluirUsuario">Excluir</button>
@@ -104,10 +99,10 @@ export const Usuarios = (): JSX.Element => {
                                     <div className="espacamentoBotao">
                                         <div className="espacamentoBtnEditar">
                                             <ModalUsuario info="X" mostrar={modalUsuario} funcao={AbrirFecharModal} />
-                                            <button className="btnEditarUsuario"onClick={() => AbrirFecharModal(modalUsuario) }>Editar</button>
+                                            <button className="btnEditarUsuario" onClick={() => AbrirFecharModal(modalUsuario)}>Editar</button>
                                         </div>
                                         <div className="espacamentoBtnExcluir">
-                                            <button className="btnExcluirUsuario"onClick={() => AbrirFecharModal(modalUsuario) }>Excluir</button>
+                                            <button className="btnExcluirUsuario" onClick={() => AbrirFecharModal(modalUsuario)}>Excluir</button>
                                         </div>
                                     </div>
                                     <div className="espacamentoBotao">
@@ -123,12 +118,8 @@ export const Usuarios = (): JSX.Element => {
                             </div>
                         </div>
                     </div>
-
                 </main>
-
-
             </div>
-
             <Footer />
         </>
     );
